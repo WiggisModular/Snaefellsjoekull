@@ -1,4 +1,4 @@
-# Snæfellsjökull
+![Snæfellsjökull](docu/logo.png)
 
 A simple modular eurorack stereo mixer.
 
