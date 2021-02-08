@@ -1,0 +1,258 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:AudioJack2_SwitchT J1
+U 1 1 601DE829
+P 4200 3150
+F 0 "J1" H 4232 3475 50  0000 C CNN
+F 1 "AudioJack2_SwitchT" H 4232 3384 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 4200 3150 50  0001 C CNN
+F 3 "~" H 4200 3150 50  0001 C CNN
+	1    4200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 601E0F4E
+P 6450 3350
+F 0 "RV2" H 6380 3396 50  0000 R CNN
+F 1 "50k" H 6380 3305 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 6450 3350 50  0001 C CNN
+F 3 "~" H 6450 3350 50  0001 C CNN
+	1    6450 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3050 4650 3050
+Wire Wire Line
+	4650 3050 4650 3250
+Wire Wire Line
+	4650 3250 4450 3250
+$Comp
+L Device:R_POT RV1
+U 1 1 601E820E
+P 5050 3350
+F 0 "RV1" H 4980 3304 50  0000 R CNN
+F 1 "10k_log" H 4980 3395 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 5050 3350 50  0001 C CNN
+F 3 "~" H 5050 3350 50  0001 C CNN
+	1    5050 3350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4400 3150 5050 3150
+Wire Wire Line
+	5050 3150 5050 3200
+Wire Wire Line
+	5050 3500 5050 3550
+Wire Wire Line
+	5050 3550 4450 3550
+Wire Wire Line
+	4450 3550 4450 3250
+Connection ~ 4450 3250
+Wire Wire Line
+	4450 3250 4400 3250
+$Comp
+L power:GND #PWR0101
+U 1 1 601EC566
+P 4450 3600
+F 0 "#PWR0101" H 4450 3350 50  0001 C CNN
+F 1 "GND" H 4455 3427 50  0000 C CNN
+F 2 "" H 4450 3600 50  0001 C CNN
+F 3 "" H 4450 3600 50  0001 C CNN
+	1    4450 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3550 4450 3600
+Connection ~ 4450 3550
+$Comp
+L Device:R R1
+U 1 1 601F0DC7
+P 6000 3100
+F 0 "R1" V 5793 3100 50  0000 C CNN
+F 1 "10k" V 5884 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5930 3100 50  0001 C CNN
+F 3 "~" H 6000 3100 50  0001 C CNN
+F 4 " C17414" V 6100 3100 50  0000 C CNN "LCSC"
+	1    6000 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 601F2150
+P 6000 3600
+F 0 "R2" V 5793 3600 50  0000 C CNN
+F 1 "10k" V 5884 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5930 3600 50  0001 C CNN
+F 3 "~" H 6000 3600 50  0001 C CNN
+F 4 " C17414" V 6000 3600 50  0001 C CNN "LCSC"
+	1    6000 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 3100 5650 3100
+Wire Wire Line
+	5650 3600 5850 3600
+Wire Wire Line
+	6150 3600 6450 3600
+Wire Wire Line
+	6450 3600 6450 3500
+Wire Wire Line
+	6150 3100 6450 3100
+Wire Wire Line
+	6450 3100 6450 3200
+$Comp
+L Device:R R3
+U 1 1 601F60AC
+P 7000 3100
+F 0 "R3" V 6793 3100 50  0000 C CNN
+F 1 "10k" V 6884 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6930 3100 50  0001 C CNN
+F 3 "~" H 7000 3100 50  0001 C CNN
+F 4 " C17414" V 7000 3100 50  0001 C CNN "LCSC"
+	1    7000 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 601F60B2
+P 7000 3600
+F 0 "R4" V 6793 3600 50  0000 C CNN
+F 1 "10k" V 6884 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6930 3600 50  0001 C CNN
+F 3 "~" H 7000 3600 50  0001 C CNN
+F 4 " C17414" V 7000 3600 50  0001 C CNN "LCSC"
+	1    7000 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 3100 6850 3100
+Connection ~ 6450 3100
+Wire Wire Line
+	6850 3600 6450 3600
+Connection ~ 6450 3600
+Wire Wire Line
+	6650 3350 6600 3350
+Wire Wire Line
+	6650 3350 6650 3650
+$Comp
+L power:GND #PWR0102
+U 1 1 601F9675
+P 6650 3650
+F 0 "#PWR0102" H 6650 3400 50  0001 C CNN
+F 1 "GND" H 6655 3477 50  0000 C CNN
+F 2 "" H 6650 3650 50  0001 C CNN
+F 3 "" H 6650 3650 50  0001 C CNN
+	1    6650 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 7300 3100 2    50   Input ~ 0
+R_Bus
+Wire Wire Line
+	7150 3100 7300 3100
+Text GLabel 7300 3600 2    50   Input ~ 0
+L_Bus
+Wire Wire Line
+	7300 3600 7150 3600
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J2
+U 1 1 602043BD
+P 8200 4100
+F 0 "J2" H 8250 4417 50  0000 C CNN
+F 1 "Bus Connector" H 8250 4326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 8200 4100 50  0001 C CNN
+F 3 "~" H 8200 4100 50  0001 C CNN
+	1    8200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 602073C5
+P 7900 4450
+F 0 "#PWR0103" H 7900 4200 50  0001 C CNN
+F 1 "GND" H 7905 4277 50  0000 C CNN
+F 2 "" H 7900 4450 50  0001 C CNN
+F 3 "" H 7900 4450 50  0001 C CNN
+	1    7900 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 8650 4100 2    50   Input ~ 0
+L_Bus
+Wire Wire Line
+	8650 4100 8500 4100
+Text GLabel 7850 4100 0    50   Input ~ 0
+R_Bus
+Wire Wire Line
+	8000 4100 7850 4100
+Text GLabel 8650 4200 2    50   Input ~ 0
+L_Send
+Wire Wire Line
+	8650 4200 8500 4200
+Text GLabel 7850 4200 0    50   Input ~ 0
+R_Send
+Wire Wire Line
+	8000 4200 7850 4200
+Text GLabel 8650 4000 2    50   Input ~ 0
+RES2
+Wire Wire Line
+	8650 4000 8500 4000
+Text GLabel 7850 4300 0    50   Input ~ 0
+RES1
+Wire Wire Line
+	7850 4300 8000 4300
+Wire Wire Line
+	7900 4000 8000 4000
+Wire Wire Line
+	7900 4000 7900 4450
+$Comp
+L power:GND #PWR0104
+U 1 1 6023B765
+P 8600 4450
+F 0 "#PWR0104" H 8600 4200 50  0001 C CNN
+F 1 "GND" H 8605 4277 50  0000 C CNN
+F 2 "" H 8600 4450 50  0001 C CNN
+F 3 "" H 8600 4450 50  0001 C CNN
+	1    8600 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4300 8600 4300
+Wire Wire Line
+	8600 4300 8600 4450
+NoConn ~ 4600 3600
+$Comp
+L Device:C C1
+U 1 1 6021BC72
+P 5450 3350
+F 0 "C1" V 5198 3350 50  0000 C CNN
+F 1 "1µ" V 5289 3350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5488 3200 50  0001 C CNN
+F 3 "~" H 5450 3350 50  0001 C CNN
+F 4 "C28323" H 5450 3350 50  0001 C CNN "LCSC"
+	1    5450 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3100 5650 3350
+Wire Wire Line
+	5300 3350 5200 3350
+Wire Wire Line
+	5600 3350 5650 3350
+Connection ~ 5650 3350
+Wire Wire Line
+	5650 3350 5650 3600
+$EndSCHEMATC
