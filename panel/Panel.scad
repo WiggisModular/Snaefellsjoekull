@@ -23,8 +23,15 @@ module panel(){
     echo(str("Panel width: ", w));
     difference() {
         cube(size=[w,panelOuterHeight, thickness], center=false);
-        translate([pmcWidth/2+spacing, 24, 0]) {
-            panMonoChannels();
+        // panMonoChannels
+        if (mnfPos == "R") {
+            translate([pmcWidth/2+spacing, 24, 0]) {
+                panMonoChannels();
+            }
+        } else {
+            translate([pmcWidth/2+spacing+ mnfWidth*(mnfNumber+1), 24, 0]) {
+                panMonoChannels();
+            }           
         }
     }
 }
