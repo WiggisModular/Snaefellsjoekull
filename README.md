@@ -1,5 +1,8 @@
 ![Snæfellsjökull](docu/logo.png)
 
+** Prodution files out of date, pots go the wrong way round. **
+
+
 A simple modular eurorack stereo mixer.
 
 ## Modules
