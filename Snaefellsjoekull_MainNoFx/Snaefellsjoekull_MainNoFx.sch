@@ -233,7 +233,7 @@ F 1 "10k_log" H 7730 2055 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles" H 7800 2100 50  0001 C CNN
 F 3 "~" H 7800 2100 50  0001 C CNN
 	1    7800 2100
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R7
@@ -571,7 +571,7 @@ F 1 "10k_log" H 7730 5055 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles" H 7800 5100 50  0001 C CNN
 F 3 "~" H 7800 5100 50  0001 C CNN
 	1    7800 5100
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R8

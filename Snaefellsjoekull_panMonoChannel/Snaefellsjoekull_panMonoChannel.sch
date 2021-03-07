@@ -46,11 +46,11 @@ L Device:R_POT RV1
 U 1 1 601E820E
 P 5050 3350
 F 0 "RV1" H 4980 3304 50  0000 R CNN
-F 1 "10k_log" H 4980 3395 50  0000 R CNN
+F 1 "10k" H 4980 3395 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 5050 3350 50  0001 C CNN
 F 3 "~" H 5050 3350 50  0001 C CNN
 	1    5050 3350
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4400 3150 5050 3150
@@ -233,7 +233,6 @@ Wire Wire Line
 	8500 4300 8600 4300
 Wire Wire Line
 	8600 4300 8600 4450
-NoConn ~ 4600 3600
 $Comp
 L Device:C C1
 U 1 1 6021BC72
