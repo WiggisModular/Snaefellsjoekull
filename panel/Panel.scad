@@ -13,8 +13,8 @@ mnfPos = "R"; // [R:Right, L:Left]
 
 /* [General] */
 sizeInHP=42;
-potHolesize = 9;
-connHolesize = 7;
+potHolesize = 7;
+connHolesize = 6;
 thickness = 2;
 export = 0; // [0:False, 1:True]
 
